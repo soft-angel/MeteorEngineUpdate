@@ -1,0 +1,7 @@
+<?$APPLICATION->IncludeComponent("MeteorRC:shop.basket", "", Array(
+		"COMPONENT" => "shop",
+		"IBLOCK" => "products",	// Инфоблок
+		"BASKET_URL" => "/personal/basket/",
+	),
+	false
+);?>

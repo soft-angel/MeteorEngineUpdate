@@ -1,0 +1,7 @@
+<?$APPLICATION->IncludeComponent("MeteorRC:main.include",".default",Array(
+        "PATH" => "/MeteorRC/include/text.php",
+        "CACHE_TYPE" => "H",    // Тип кеширования
+        "CACHE_TIME" => "36000000", // Время кеширования (сек.)
+    ),
+    false
+);?>

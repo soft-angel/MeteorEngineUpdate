@@ -1,0 +1,7 @@
+<?
+$APPLICATION->IncludeComponent("MeteorRC:users.profile", "", Array(
+    "COMPONENT" => "users",
+    "IBLOCK" => "users",  // Инфоблок
+	), false
+);
+?>

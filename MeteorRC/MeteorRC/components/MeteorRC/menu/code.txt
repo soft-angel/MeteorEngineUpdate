@@ -1,0 +1,8 @@
+<?$APPLICATION->IncludeComponent("MeteorRC:menu","top",Array(
+        "ROOT_MENU_TYPE" => "top", 
+        "MAX_LEVEL" => "1", 
+        "USE_EXT" => "N",
+        "CACHE_TYPE" => "A",    // Тип кеширования
+        "CACHE_TIME" => "36000000", // Время кеширования (сек.)
+    )
+);?>

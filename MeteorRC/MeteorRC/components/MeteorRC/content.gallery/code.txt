@@ -1,0 +1,15 @@
+<?$APPLICATION->IncludeComponent("MeteorRC:content.gallery", "", Array(
+        "SORT" => array(
+            "BY" => "SORT",
+            "ORDER" => "ASC",
+            "TYPE" => "INT",
+        ),
+        "FILTER" => array("ACTIVE" => "Y"),
+        "COMPONENT" => "content",
+        "IBLOCK" => "gallery", // Инфоблок
+        "COUNT" => "200", // Количество элементов
+        "CACHE_TYPE" => "A",    // Тип кеширования
+        "CACHE_TIME" => "36000000", // Время кеширования (сек.)
+    ),
+    false
+);?>

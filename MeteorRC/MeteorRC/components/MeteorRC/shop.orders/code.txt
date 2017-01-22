@@ -1,0 +1,17 @@
+<?
+$APPLICATION->IncludeComponent("MeteorRC:shop.orders", "", array(
+	"FILTER" => false,
+    "SEF_MODE" => "Y",
+	"COMPONENT" => "shop",
+	"IBLOCK" => "basket",	// Инфоблок
+    "SEF_FOLDER" => "/personal/orders/",
+    "PAGE_ELEMENT_COUNT" => 10,
+    "PATH_TO_PAYMENT" => "/personal/orders/payment/",
+    "PATH_TO_BASKET" => "/personal/basket/",
+    "SET_TITLE" => "Y",
+    "SEF_URL_TEMPLATES" => array(
+        "SEF_URL_PAGE" => "/personal/orders/",
+        "SEF_URL_DETAIL" => "/personal/orders/#ID#.html",
+    )
+	), false
+);

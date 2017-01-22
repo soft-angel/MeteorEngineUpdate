@@ -1,0 +1,34 @@
+<?if (!defined("PROLOG_INCLUDED") || PROLOG_INCLUDED!==true) die();
+return array(
+	"COMPONENT" => "content",
+	"NAME" => "Галерея",
+	"IBLOCK" => "gallery",
+	"DESCRIPTION" => "Управление галереей",
+	"ICON" => '<i class="fa fa-picture-o"></i>',
+	"EDITOR_FILE" => "/MeteorRC/admin/editors/elements.php",
+	"BD_FOLDER" => "/MeteorRC/bd/content/",
+	"CORPORATE" => "MeteorRC",
+	"TEXT_ADD" => "Добавить изображение",
+	'EVENTS' => array(
+		"TEXT" => array(
+			"ADD" => "Добавил изображение в галерею",
+			"EDIT" => "Изменил изображение в галерее",
+			"DELL" => "Удалил изображение в галерее",
+		),
+		"FIELDS" => array(
+			"NAME" => "NAME",
+			"DETAIL_PICTURE" => "PICTURE",
+		)
+	),
+	'TABS' => array(
+		"MAIN" => "Основное",
+	),
+	"ADMIN" => "Y",
+	"FIELDS" => array(
+		"NAME" => array("TAB" => "MAIN", "DISPLAY" => "Y", "NAME" => "Название", "TYPE" => "TEXT", "ICON" => '<i class="fa fa-picture-o"></i>', "REQUIRED" => "Y", "FASSET" => "Y"),
+		"ACTIVE" => array("TAB" => "MAIN", "DISPLAY" => "Y", "NAME" => "Активность", "TYPE" => "SELECT", "SELECT" => array("Y" => "Да", "N" => "Нет"), "ICON" => '<i class="fa fa-power-off"></i>', "FASSET" => "Y"),
+		"PICTURE" => array("TAB" => "MAIN", "DISPLAY" => "Y", "NAME" => "Изображение", "TYPE" => "IMAGE", 'MAX_WIDTH' => 1366, 'QUALITY' => 75, "ICON" => '<i class="fa fa-picture-o"></i>'),
+	),
+	'IMAGE_WIDTH' => '50px',
+);
+?>
